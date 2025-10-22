@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weather Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+</head>
+<body>
+  <section class="weather-dashboard" role="region" >
+    <header class="dashboard-header">Weather Dashboard</header>
+    <form class="input-panel" >
+      <label for="cityname" class="input-label">Enter a City Name</label>
+      <input id="input-box" type="text" name="cityname" placeholder="E.g., New York, London, Tokyo" class="input-box" / >
+      <div class="err-msg hide"></div>
+      <button type="button" class="search-btn">Search</button>
+    </form>
+    <article class="weather-info">
+      <section class="current-weather">
+        <div class="current-weather-text">
+          <div class="current-weather-location"><span id="city-name">City</span> <span id="date">(yyyy-mm-dd)</span></div>
+          <div >Temperature: <span id="temp"></span></div>
+          <div >Wind: <span  id="wind"></span> </div>
+          <div >Humidity: <span id="humidity"></span></div>
+        </div>
+        <div class="current-weather-icon" >
+          <div class="weather-icon main-icon" >
+            <img src="./assets/weather/atmosphere.svg" alt="" class="weather-img">
+            
+          </div>
+        </div>
+      </section>
+      <section class="forecast" >
+        <div class="forecast-header">3-Day Forecast</div>
+        <div class="forecast-cards">
+          <div class="forecast-card" role="article" >
+            <div class="forecast-date">(yyyy-mm-dd)</div>
+            <div >
+              <img src="./assets/weather/atmosphere.svg" alt="" class="weather-icon" >
+            </div>
+            <div class="forecast-detail">Temperature: <span class="forecast-temp"></span></div>
+            <div class="forecast-detail">Max Wind: <span  class="forecast-wind"></span> </div>
+            <div class="forecast-detail">Humidity: <span class="forecast-humidity"></span></div>
+          </div>
+          <div class="forecast-card" role="article" >
+            <div class="forecast-date">(yyyy-mm-dd)</div>
+            <div >
+              <img src="./assets/weather/atmosphere.svg" alt="" class="weather-icon" >
+            </div>
+             <div class="forecast-detail">Temperature: <span class="forecast-temp"></span></div>
+            <div class="forecast-detail">Max Wind: <span  class="forecast-wind"></span> </div>
+            <div class="forecast-detail">Humidity: <span class="forecast-humidity"></span></div>
+          </div>
+          <div class="forecast-card" role="article" >
+            <div class="forecast-date">(yyyy-mm-dd)</div>
+            <div >
+              <img src="./assets/weather/atmosphere.svg" alt="" class="weather-icon" >
+            </div>
+             <div class="forecast-detail">Temperature: <span class="forecast-temp"></span></div>
+            <div class="forecast-detail">Max Wind: <span  class="forecast-wind"></span> </div>
+            <div class="forecast-detail">Humidity: <span class="forecast-humidity"></span></div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </section>
+   <footer>
+  <div class="footer-content">
+    <p><i class="fa-regular fa-copyright"></i> Weather Dashboard</p>
+    <p>Developed by Ayush Deveshkumar Kansara</p>
+    <p>
+      Connect with me on : <br>
+      <div class="social-row">
+      <a href="https://www.instagram.com/ayush1212__?igsh=NHJ4MHJiOHQ3cDFn" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+      <a href="www.linkedin.com/in/ayush-kansara-377086285" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/ayush-kansara" class="social-icon"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
