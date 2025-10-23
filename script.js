@@ -17,7 +17,7 @@ let reset = () => {
 }
 
 let checkWeather = async (city) => {
-    const api_key = "fd3f3b2a0597494c83a133301252908";
+    const api_key = "YOUR_API_KEY";
     const current_url = `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`;
 
     weather_data = await fetch(`${current_url}`)
@@ -86,5 +86,6 @@ searchBtn.addEventListener("click", () => {
     checkWeather(inputBox.value);
     forecastWeather(inputBox.value);
 });
+
 
 
